@@ -100,7 +100,8 @@
     .divider-icon { color: var(--gold); font-size: 1.1rem; }
 
     .tagline {
-      font-size: clamp(.95rem, 2.2vw, 1.2rem);
+      /* font-size: clamp(.95rem, 2.2vw, 1.2rem); */
+      font-size: clamp(1.1rem, 2.2vw, 1.2rem);
       font-style: italic;
       color: var(--maroon);
       opacity: .75;
@@ -109,10 +110,11 @@
     .date-badge {
       display: inline-block;
       margin-bottom: 0.2rem;
-      padding: .4rem 1.4rem;
+      /* padding: .4rem 1.4rem; */
+      padding: .4rem 0.5rem;
       border: 1px solid var(--gold);
       border-radius: 2rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
       letter-spacing: .12em;
       color: var(--gold);
       /* text-transform: uppercase; */
@@ -209,18 +211,23 @@
       text-align: center;
     }
 
-    .card-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 52px; height: 52px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      margin-bottom: .9rem;
-      font-size: 1.4rem;
-      box-shadow: 0 4px 20px rgba(200,151,58,.5);
-      transition: transform .3s ease;
-    }
+   .card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+
+    background-color: #FFF8E1;
+    background-image: url('./assets/logo2.png');
+    background-size: 97%;  
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: .9rem;
+    box-shadow: 0 4px 20px rgba(200,151,58,.3);
+  }
     .card:hover .card-icon { transform: scale(1.12) rotate(-5deg); }
 
     .card-type {
@@ -421,7 +428,8 @@
     </div>
 
     <p class="tagline" style="margin-bottom: 10px">Two souls, one destiny. Join us as we begin forever</p>
-    <span class="date-badge">🗓 &nbsp; <b>29 April 2026</b>  &nbsp;·&nbsp; Belgavi, Karnataka</span>
+    <!-- <span class="date-badge">🗓 &nbsp; <b>29 April 2026</b>  &nbsp;·&nbsp; Belgavi, Karnataka</span> -->
+    <span class="date-badge">🗓<b>29 April 2026&nbsp;·&nbsp;12:30 PM Onwards</b> Belgavi, Karnataka</span>
   </header>
 
   <!-- Location Cards -->
@@ -442,7 +450,10 @@
       <div class="card-overlay"></div>
 
       <div class="card-body">
-        <div class="card-icon">🏛️</div>
+        <!-- <div class="card-icon">🏛️</div> -->
+        <div class="card-icon">
+          <!-- <img src="./assets/logo2.png" alt="icon"> -->
+        </div>
         <p class="card-type">Wedding Venue</p>
         <h2 class="card-title">Pai Convention Hall</h2>
         <p class="card-address">Behind Nagshanti Showroom,<br/>Udyambag, Belagavi, Karnataka 590008</p>
